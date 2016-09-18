@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_changeOrder_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_change_badOrder"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/changeorder_selecter"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="问题订单"
+                        android:textColor="@drawable/changeorder_textselecter" />
+
+                    <RadioButton
+                        android:id="@+id/radio_change_goodOrder"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/changeorder_selecter"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="正常订单"
+                        android:textColor="@drawable/changeorder_textselecter" />
+                </RadioGroup>
+            </LinearLayout>
+	<View style="@style/line_style" />
+            <LinearLayout
+                android:id="@+id/ll_changeorder_problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="问题订单" />
+
+                <ImageView
+                    android:id="@+id/img_changeorder_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/huise_jiandown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_change_goodorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View style="@style/line_style" />
+
+                <com.ruiqi.view.CustomListView
+                    android:id="@+id/listView_change_order"
+                    android:layout_width="match_parent"
+                    
+                    android:layout_height="wrap_content" >
+                </com.ruiqi.view.CustomListView>
+
+                <View style="@style/line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="备注:" />
+
+                    <EditText
+                        android:id="@+id/editText_changeOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+<View style="@style/line_style" />
+            <LinearLayout
+                android:id="@+id/ll_changeorder_good"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                  <TextView
+                    
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="正常订单" />
+
+                <ImageView
+                     android:id="@+id/img_changeorder_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/huise_jiandown" />
+
+            </LinearLayout>
+<View style="@style/line_style" />
+<LinearLayout
+                android:id="@+id/ll_changeorder_goodDetials"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                  <TextView
+                    
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#333"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:text="变更为正常订单" />
+
+                  <CheckBox
+                     
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                		android:button="@drawable/zhekou_selecter"
+                   />
+                
+            </LinearLayout>
+            <View style="@style/line_style" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_changeorder_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/commit"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

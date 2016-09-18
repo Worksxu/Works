@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 收款界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f8f8f8">
+    
+    
+    <View style="@style/line_style"
+         android:layout_marginTop="10dp"/>
+    <RelativeLayout 
+        android:id="@+id/rl_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+       >
+        
+        <TextView 
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李四毛"
+            android:textSize="14sp"
+            android:textColor="#333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        
+    </RelativeLayout>
+    
+    <View style="@style/line_style"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_money"
+         android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+         <TextView 
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赊欠金额："
+            android:textSize="14sp"
+            android:textColor="#333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+         <TextView
+             android:id="@+id/tv_money_content"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="1200"
+             android:textColor="#FF3333"
+             android:textSize="14sp"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/tv_money" 
+             android:layout_marginLeft="5dp"/>
+        
+    </RelativeLayout>
+     <View style="@style/line_style"/>
+     
+         <RelativeLayout 
+        android:id="@+id/rl_input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_holder"
+        android:layout_marginTop="20dp">
+        
+        <TextView 
+            android:id="@+id/tv_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收缴金额"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_input"
+            android:background="@drawable/edittext_style"
+            android:ems="10" 
+            android:layout_centerVertical="true"
+            android:hint="输入金额"
+            android:gravity="center"
+            android:numeric="decimal"/>
+        
+    </RelativeLayout>
+    
+          <RelativeLayout 
+        android:id="@+id/rl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_out"
+            style="@style/next"
+            android:layout_width="288dp"
+            android:layout_height="39dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="收缴款项" />
+
+       
+        
+    </RelativeLayout>
+    
+    
+    
+    
+    
+
+</LinearLayout>

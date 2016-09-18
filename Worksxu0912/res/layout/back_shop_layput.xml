@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_backshop_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </com.ruiqi.view.CustomDownView>
+    <View style="@style/line_style" />
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_backshop_null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </com.ruiqi.view.CustomDownView>
+    <View style="@style/line_style" />
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_backshop_old"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </com.ruiqi.view.CustomDownView>
+    <View style="@style/line_style" />
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_backshop_peijian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </com.ruiqi.view.CustomDownView>
+     <View style="@style/line_style" />
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_backshop_guzhang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </com.ruiqi.view.CustomDownView>
+    <View style="@style/line_style" />
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_backshop_weightNotes"
+        android:layout_width="match_parent"
+         android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        
+    </com.ruiqi.view.CustomDownView>
+    <View style="@style/line_style" />
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_backshop_nullNotes"
+        android:layout_width="match_parent"
+     
+        android:layout_height="wrap_content">
+        
+    </com.ruiqi.view.CustomDownView>
+    <View style="@style/line_style" />
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_backshop_oldNotes"
+        android:layout_width="match_parent"
+     
+        android:layout_height="wrap_content">
+        
+    </com.ruiqi.view.CustomDownView>
+    <View style="@style/line_style" />
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_backshop_peijianNotes"
+        android:layout_width="match_parent"
+       
+        android:layout_height="wrap_content">
+        
+    </com.ruiqi.view.CustomDownView>
+     <View style="@style/line_style" />
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_backshop_guzhangNotes"
+        android:layout_width="match_parent"
+       
+        android:layout_height="wrap_content">
+        
+    </com.ruiqi.view.CustomDownView>
+    <View style="@style/line_style" />
+    
+
+</LinearLayout>

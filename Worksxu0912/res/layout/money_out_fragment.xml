@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout 
+        android:id="@+id/rl_select"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RadioGroup 
+        android:id="@+id/rg_select"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+       >
+
+            <RadioButton
+                android:id="@+id/rb_order_out"
+                style="@style/RadioTopStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="@drawable/radiobutton"
+                android:gravity="center"
+                android:text="订单支出" 
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rb_mendian_out"
+                style="@style/RadioTopStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="@drawable/radiobutton"
+                android:gravity="center"
+                android:text="上缴支出" />
+        
+    </RadioGroup>
+        
+    </RelativeLayout>
+   
+    
+    <RelativeLayout 
+        android:id="@+id/rl_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ListView 
+        android:id="@+id/lv_content"
+        android:scrollbars="none"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        
+    </ListView>
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

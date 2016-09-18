@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                 android:paddingLeft="10dp"
+                android:background="#ffffff"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/tv_checkbottle_number"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="钢瓶号" />
+                <TextView
+                    android:id="@+id/tv_checkbottle_xinpian"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="芯片号" />
+                <TextView
+                    android:id="@+id/tv_checkbottle_yuqi"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                     android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="余气" />
+                
+                <TextView
+                    android:id="@+id/tv_checkbottle_weight"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                     android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="规格" />
+
+                
+
+            </LinearLayout>
+
+</LinearLayout>

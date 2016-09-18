@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择规格"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_zhejiu_type"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical|top"
+                        android:paddingLeft="2dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/huise_jiantou" />
+                </LinearLayout>
+
+                <View style="@style/line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择日期"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_zhejiu_date"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical|top"
+                        android:paddingLeft="2dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/huise_jiantou" />
+                </LinearLayout>
+
+                <View style="@style/line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="添加数量 "
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/iv_olderSup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="-5dp"
+                            android:src="@drawable/sup" />
+
+                        <TextView
+                            android:id="@+id/tv_zhejiu_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/num"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#333"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_olderAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-5dp"
+                            android:src="@drawable/add_1" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView_yuqi_sure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/yuqi_sure"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:text="确定"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/line_style" />
+
+                <View
+                    style="@style/line_style"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="规格"
+                        android:textColor="#666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="年份"
+                        android:textColor="#666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="数量"
+                        android:textColor="#666"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="金额"
+                        android:textColor="#666"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/line_style" />
+
+                <com.ruiqi.view.SwipeMenuListView
+                    android:id="@+id/lv_yuqi_Toast"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="100dp"
+                    android:layout_height="wrap_content" >
+                </com.ruiqi.view.SwipeMenuListView>
+            </LinearLayout>
+       
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <View style="@style/line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="残液重量(kg):"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText_zhejiu_weight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="输入重量"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textColor="#333"
+                        android:textSize="14sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    android:background="#999" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="残液折现:"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_zhejiu_canyemoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="@color/title"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="折现总额 : "
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_yuqiToatal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#FF5555"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_yuqi_commint"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:background="@color/title"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView_bottlegass_number"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:textSize="14sp"
+           
+            android:textColor="#333"
+            android:layout_height="wrap_content"
+            android:text="ffaf" />
+        <TextView
+            android:id="@+id/textView_bottlegass_weight"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:textSize="14sp"
+           
+            android:textColor="#333"
+            android:layout_height="wrap_content"
+            android:text="ffaf" />
+
+        <EditText
+            android:id="@+id/editText_bottlegass_yj"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="输入金额"
+            android:textSize="14sp"
+            android:background="#edf4ff"
+            android:textColor="#333"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+</LinearLayout>

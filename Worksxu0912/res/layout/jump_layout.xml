@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/logobeijing"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+           
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.ruiqi.view.CustomFootView
+            android:id="@+id/cf_gass"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </com.ruiqi.view.CustomFootView>
+
+        <View
+            style="@style/line_style"
+            android:layout_marginLeft="10dp" />
+
+        <com.ruiqi.view.CustomFootView
+            android:id="@+id/cf_peijian"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone" >
+        </com.ruiqi.view.CustomFootView>
+
+        <View
+            style="@style/line_style"
+            android:layout_marginLeft="10dp" />
+
+        <com.ruiqi.view.CustomFootView
+            android:id="@+id/cf_backbottle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </com.ruiqi.view.CustomFootView>
+
+        <View
+            style="@style/line_style"
+            android:layout_marginLeft="10dp" />
+
+        <com.ruiqi.view.CustomFootView
+            android:id="@+id/cf_repair"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </com.ruiqi.view.CustomFootView>
+
+        <View
+            style="@style/line_style"
+            android:layout_marginLeft="10dp" />
+
+        <com.ruiqi.view.CustomFootView
+            android:id="@+id/cf_zhejiu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </com.ruiqi.view.CustomFootView>
+
+        <View
+            style="@style/line_style"
+            android:layout_marginLeft="10dp" />
+
+        <com.ruiqi.view.CustomFootView
+            android:id="@+id/cf_tuihuo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+         	android:visibility="gone"
+            android:layout_weight="1" >
+        </com.ruiqi.view.CustomFootView>
+
+        <View
+            style="@style/line_style"
+            android:layout_marginLeft="10dp" />
+
+        <com.ruiqi.view.CustomFootView
+            android:id="@+id/cf_self"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </com.ruiqi.view.CustomFootView>
+
+        <View
+            style="@style/line_style"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

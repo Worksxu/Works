@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView_crateGass"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       
+        android:layout_weight="4" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                 android:paddingLeft="10dp"
+                android:background="#ffffff"
+                android:layout_height="40dp" >
+
+                <TextView
+                    
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="商品名称" />
+                <TextView
+                    
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="规格" />
+                <TextView
+                    
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="单价" />
+                <TextView
+                     android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="数量" />
+
+            </LinearLayout>
+            <View style="@style/line_style" />
+
+            <com.ruiqi.view.CustomListView
+                android:id="@+id/listView_gassTost"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:layout_height="wrap_content" >
+            </com.ruiqi.view.CustomListView >
+            <View style="@style/line_style"
+                android:layout_marginTop="10dp"  />
+            <com.ruiqi.view.CustomDownView
+                android:id="@+id/down_addPeijian"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                
+                ></com.ruiqi.view.CustomDownView>
+            <View style="@style/line_style"
+               />
+            
+            <com.ruiqi.view.SwipeMenuListView 
+                android:id="@+id/listView_addpeijian"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="150dp" >
+            </com.ruiqi.view.SwipeMenuListView>
+             <View style="@style/line_style"
+                android:layout_marginTop="10dp"  />
+            
+            <View style="@style/line_style"
+               />
+            <com.ruiqi.view.SwipeMenuListView
+                android:id="@+id/listView_addzhekou"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="100dp" >
+            </com.ruiqi.view.SwipeMenuListView>
+            <LinearLayout
+                android:id="@+id/ll_delete_zhekou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView_delete_zhekou"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#333"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView_delete_zhekou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lajitong_xhdpi" />
+
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp" 
+        android:orientation="vertical"
+        android:gravity="center">
+        <com.ruiqi.view.CustomDownView
+                android:id="@+id/down_addzhekou"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+            
+                ></com.ruiqi.view.CustomDownView>
+         <TextView
+            
+           android:id="@+id/tv_gass_next"
+           android:layout_width="match_parent"
+           android:layout_height="39dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+           android:background="@drawable/commit"
+           android:gravity="center"
+           android:text="下一步"
+          
+           android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

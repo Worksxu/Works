@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content" >
+
+        <TextView
+          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="商品欠款合同编号:" />
+
+        <EditText
+            android:id="@+id/editText_debt_goodsNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="输入合同编号"
+            android:textColor="#cccccc"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+      <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ddd" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="商品欠款金额:" />
+
+       <EditText
+            android:id="@+id/editText_debt_goodsMoney"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="输入欠款金额"
+            android:textColor="#cccccc"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+     <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="#ddd" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="押金欠款合同编号:" />
+
+       <EditText
+            android:id="@+id/editText_debt_cashNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="输入合同编号"
+            android:textColor="#cccccc"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+     <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+          
+            android:background="#ddd" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="押金欠款金额:" />
+
+        <EditText
+            android:id="@+id/editText_debt_cashMoney"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="输入欠款金额"
+            android:textColor="#cccccc"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+          
+            android:background="#ddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:layout_weight="1" >
+
+        
+
+        <TextView
+            android:id="@+id/tv_debt_sure"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/commit"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

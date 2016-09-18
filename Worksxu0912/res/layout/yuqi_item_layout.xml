@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_yuqi_item_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="钢瓶号/芯片号"
+            android:textColor="#666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_yuqi_item_weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="余起重量"
+            android:textColor="#666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_yuqi_item_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="折现金额"
+            android:textColor="#333"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

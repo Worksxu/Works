@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_backShop"
+                         android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                       
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <com.ruiqi.view.CustomListView
+                            android:id="@+id/listView_backpeijian"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3" >
+                        </com.ruiqi.view.CustomListView>
+
+                        <TextView
+                            android:id="@+id/tv_peijianshop_sure"
+                            android:layout_width="match_parent"
+                            android:layout_height="39dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            
+                            android:background="@drawable/commit"
+                            android:gravity="center"
+                            android:text="下一步"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_backshop_toast"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="暂无库存"
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
