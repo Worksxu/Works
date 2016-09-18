@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+       
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择钢瓶号"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_null_number"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical|top"
+                        android:paddingLeft="2dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/huise_jiantou" />
+                </LinearLayout>
+
+                <View style="@style/line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="余气重量 (kg):"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/edit_yuqi_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="输入余气重量"
+                        android:textColor="#333"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <View style="@style/line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上次气价(元/kg) :"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/edit_yuqi_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="输入余气价格"
+                        android:textColor="#333"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp" >
+
+                        <requestFocus />
+                    </EditText>
+
+                   
+                </LinearLayout>
+
+                <View style="@style/line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="余气折现 : "
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_yuqi_money"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="0.0"
+                        android:textColor="@color/title"
+                        android:textSize="14sp" />
+                    <TextView
+                        
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:gravity="left"
+                        android:text="元"
+                        android:textColor="@color/title"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_yuqi_sure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/yuqi_sure"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="确定"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/line_style" />
+
+                <View style="@style/line_style" 
+                      android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                  	android:orientation="horizontal"
+                  	android:padding="10dp"
+                  	android:gravity="center_vertical"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:text="钢瓶号/芯片号" />
+                    <TextView
+                        
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:text="余气重量" />
+                    <TextView
+                       
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:text="折现金额" />
+
+                </LinearLayout>
+
+                <View style="@style/line_style" />
+                <com.ruiqi.view.SwipeMenuListView 
+                    android:id="@+id/lv_yuqi_Toast"
+                    android:layout_marginBottom="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+                    
+                </com.ruiqi.view.SwipeMenuListView>
+            </LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="折现总额 : "
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_yuqiToatal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#FF5555"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_yuqi_commint"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent"
+                    android:background="@color/title"
+                    android:gravity="center"
+                   
+                    android:text="确定"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

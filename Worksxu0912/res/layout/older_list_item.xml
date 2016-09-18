@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="55dp" >
+
+        <TextView
+            android:id="@+id/tv_weight1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_weight2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="规格"
+           
+           />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_fuhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="#333"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11.00"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_olderSup"
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sup" />
+
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             	android:enabled="true"
+                android:background="@drawable/num"
+                android:gravity="center"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/iv_olderAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

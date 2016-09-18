@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="钢印号"
+                            android:textColor="#666"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="规格"
+                            android:textColor="#666"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="押金"
+                            android:textColor="#666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <View style="@style/line_style" />
+
+                    <com.ruiqi.view.CustomListView
+                        android:id="@+id/listview_ll_yj"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </com.ruiqi.view.CustomListView>
+				<View style="@style/line_style" />
+                    <LinearLayout
+                        android:id="@+id/ll_backbottlegass_residue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@color/title" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="10dp"
+                            android:text="余气折现"
+                            android:textColor="#333"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center|right" >
+
+                            <TextView
+                                android:id="@+id/textView_backbottle_yuqiToast"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                            <TextView
+                              
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dip"
+                                android:text="元" />
+
+                           <ImageView android:layout_height="wrap_content"
+                               android:layout_width="wrap_content"
+                               android:src="@drawable/huise_jiantou"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View style="@style/line_style" />
+
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="bottom" >
+
+                    <TextView
+                        android:id="@+id/textView_yuqi_commint"
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/commit"
+                        android:gravity="center"
+                        android:text="下一步"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    
+
+</LinearLayout>

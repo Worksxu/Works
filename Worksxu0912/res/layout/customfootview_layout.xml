@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imageView_customfoot"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView_customfoot"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:textSize="14sp"
+        android:textColor="#333333"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical|right"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:visibility="gone">
+             <TextView
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未完成" />
+
+        <TextView
+            android:id="@+id/textView_toastOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="" />
+        </LinearLayout>
+
+       
+
+        <ImageView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/huise_jiantou" />
+
+    </LinearLayout>
+
+</LinearLayout>

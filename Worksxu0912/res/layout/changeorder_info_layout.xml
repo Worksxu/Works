@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:background="#ffffff">
+
+                    <TextView
+                        
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333"
+                        android:textSize="14sp"
+                        android:text="置换订单编号 :" />
+
+                    <TextView
+                        android:id="@+id/textView_finishbottle_number"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="#333"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"
+                     
+                      
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:textColor="@color/title"
+                        android:textSize="14sp"
+                        android:text="已完成" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                 >
+
+                <TextView
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="完成时间 :" />
+
+                <TextView
+                    android:id="@+id/textView_finishbottle_finishtime"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+              <View style="@style/line_style"
+        />
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+              android:padding="10dp"
+                android:gravity="center_vertical"
+                 >
+
+                <TextView
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:text="客户信息 :" />
+
+                <TextView
+                    android:id="@+id/textView_finishbottle_username"
+                    android:layout_width="wrap_content"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/textView_finishbottle_userphone"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                 >
+
+                <TextView
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:text="收货地址 :" />
+
+                <TextView
+                    android:id="@+id/textView_finishbottle_address"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+            <View style="@style/line_style"
+        />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="重瓶"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.ruiqi.view.CustomListView
+                    android:id="@+id/listView_changeorderinfo_good"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </com.ruiqi.view.CustomListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="故障瓶"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.ruiqi.view.CustomListView
+                    android:id="@+id/listView_changeorderinfo_bad"
+                     android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </com.ruiqi.view.CustomListView>
+            
+            
+          
+            
+         
+            
+            
+            
+        </LinearLayout>
+       
+    </ScrollView>
+
+</LinearLayout>

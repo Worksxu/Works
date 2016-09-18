@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8f8f8"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="商品名称" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="规格" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="单价" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="数量" />
+                </LinearLayout>
+
+                <View style="@style/line_style" />
+
+                <com.ruiqi.view.CustomListView
+                    android:id="@+id/listView_commintTost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" >
+                </com.ruiqi.view.CustomListView>
+
+                <View style="@style/line_style" />
+
+                
+
+                
+
+                
+
+                
+
+                <View
+                    style="@style/line_style"
+                    android:layout_marginTop="10dp" />
+
+                <com.ruiqi.view.CustomDownView
+                    android:id="@+id/commint_youhui"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+                </com.ruiqi.view.CustomDownView>
+                 <View
+                    style="@style/line_style"
+                    />
+                <LinearLayout 
+                   android:background="#ffffff"
+                android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:padding="10dp">
+                <TextView android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:text="优惠券数量"
+                     android:textColor="#333"
+                     android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/edit_pay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="输入数量"
+                    android:text="1"
+                    android:inputType="number"
+                    android:textColor="#666"
+                    android:textSize="14sp" >
+
+                    <requestFocus />
+                </EditText>
+                
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_ToastYouhui"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:textColor="#333"
+                    android:background="#fff"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone"
+                    android:text="TextView" />
+
+                
+
+                <View style="@style/line_style" />
+
+                <LinearLayout
+                    android:id="@+id/ll_commint_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="60dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_commint_goodsMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="商品金额"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView_goodsMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#ff3333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_commint_manjian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                           
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="活动优惠" />
+
+                        <TextView
+                            android:id="@+id/textView_manjianMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="#ff3333"
+                            android:text="-0" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_commint_youhui"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                           
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="送气工优惠" />
+
+                        <TextView
+                            android:id="@+id/textView_youhuiMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="#ff3333"
+                            android:text="0" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_commint_deduction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                           
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="客户优惠" />
+
+                        <TextView
+                            android:id="@+id/textView_deductionMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="#ff3333"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+	<View style="@style/line_style" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+           
+           android:layout_gravity="bottom"
+           >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:text="TextView" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="应付款:"
+                    android:textColor="#333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView_commint_Toast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#ff3333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_commint_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/title"
+                android:gravity="center"
+                android:text="提交订单" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

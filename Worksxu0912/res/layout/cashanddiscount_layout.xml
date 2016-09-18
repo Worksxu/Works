@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:id="@+id/ll_main"
+    android:orientation="vertical" >
+    
+
+      <ScrollView
+          android:id="@+id/scrollView1"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="5" >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+              <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_cash_total"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+    </com.ruiqi.view.CustomDownView>
+     <View style="@style/line_style"/>
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:gravity="center_vertical"
+         android:padding="5dp"
+         android:background="#ffffff"
+         android:layout_weight="1">
+
+         <TextView
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="15sp"
+             android:textColor="#333333"
+             android:text="钢瓶总押金 :" />
+
+         <TextView
+             android:id="@+id/tv_cash_total"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:gravity="right"
+             android:layout_height="wrap_content"
+              android:textSize="15sp"
+              android:textColor="@color/title"
+             
+             android:text="0.0" />
+         
+     </LinearLayout>
+      <View style="@style/line_style"/>
+   
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_cash_oldBottle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+        
+    </com.ruiqi.view.CustomDownView>
+     <View style="@style/line_style"/>
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:gravity="center_vertical"
+         android:padding="5dp"
+         android:background="#ffffff"
+         android:layout_weight="1">
+
+         <TextView
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="15sp"
+             android:textColor="#333333"
+             android:text="旧瓶折现金额 :" />
+
+         <TextView
+             android:id="@+id/tv_cash_oldBottle"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:gravity="right"
+             android:layout_height="wrap_content"
+              android:textSize="15sp"
+              android:textColor="@color/title"
+             
+             android:text="0.0" />
+         
+     </LinearLayout>
+      <View style="@style/line_style"/>
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_cash_yuqi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+        
+    </com.ruiqi.view.CustomDownView>
+     <View style="@style/line_style"/>
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:gravity="center_vertical"
+         android:padding="5dp"
+         android:background="#ffffff"
+         android:layout_weight="1">
+
+         <TextView
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="15sp"
+             android:textColor="#333333"
+             android:text="余气折现金额 :" />
+
+         <TextView
+             android:id="@+id/tv_cash_yuqi"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:gravity="right"
+             android:layout_height="wrap_content"
+              android:textSize="15sp"
+              android:textColor="@color/title"
+          
+             android:text="0.0" />
+         
+     </LinearLayout>
+      <View style="@style/line_style"/>
+    <com.ruiqi.view.CustomDownView 
+        android:id="@+id/CustomDownView_cash_canye"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_weight="1">
+        
+    </com.ruiqi.view.CustomDownView>
+     
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:gravity="center_vertical"
+         android:padding="5dp"
+         android:visibility="gone"
+         android:background="#ffffff"
+         android:layout_weight="1">
+
+         <TextView
+            
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="15sp"
+             android:textColor="#333333"
+             android:text="残液折现金额 :" />
+
+         <TextView
+              android:id="@+id/tv_cash_canye"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:gravity="right"
+             android:layout_height="wrap_content"
+              android:textSize="15sp"
+              android:textColor="@color/title"
+           
+             android:text="0.0" />
+         
+          </LinearLayout>
+           
+          <com.ruiqi.view.CustomDownView 
+              android:id="@+id/CustomDownView_cash_peijian"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+               android:layout_weight="1"
+               android:visibility="gone"
+               android:layout_marginTop="10dp"
+              ></com.ruiqi.view.CustomDownView>
+          
+
+          <com.ruiqi.view.SwipeMenuListView
+              android:id="@+id/listView_cash_peijian"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+          </com.ruiqi.view.SwipeMenuListView>
+           
+          <com.ruiqi.view.CustomDownView 
+              android:id="@+id/CustomDownView_cash_zhekou"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+               android:layout_weight="1"
+               android:visibility="gone"
+               android:layout_marginTop="10dp"
+              ></com.ruiqi.view.CustomDownView>
+        
+
+          <com.ruiqi.view.SwipeMenuListView
+              android:id="@+id/listView_cash_zhekou"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+          </com.ruiqi.view.SwipeMenuListView>
+         
+     </LinearLayout>
+     
+      </ScrollView>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:gravity="center"
+          android:layout_weight="1" >
+          <TextView
+            android:id="@+id/tv_cash_next"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/commit"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="#fff" />
+      </LinearLayout>
+
+</LinearLayout>

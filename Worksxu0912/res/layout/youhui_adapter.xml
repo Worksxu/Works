@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_youhui_click"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" 
+        android:gravity="center"
+        android:background="@drawable/youhui">
+
+        <LinearLayout 
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="#E6830E"
+                android:text="￥" />
+
+            <TextView
+                android:id="@+id/textView_youhui_adapter_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E6830E"
+                android:textSize="24sp"
+                android:text="268.0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                 android:id="@+id/textView_youhui_adapter_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333"
+                android:text="TextView" />
+
+            <TextView
+                 android:id="@+id/textView_youhui_adapter_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666"
+                android:textSize="12sp"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_youhuishow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/unchecked" />
+
+    </LinearLayout>
+
+</LinearLayout>
